@@ -69,7 +69,7 @@
 
     <section id="services" class="services-section section-padding section-gradient-2">
         <div class="container">
-            <h2 class="section-title center-title" data-aos="fade-up">خدماتنا المتكاملة</h2>
+            <h2 class="section-title center-title" data-aos="fade-up">مدوناتنا</h2>
             <div class="services-grid">
                 @foreach ($blogs as $blog)
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
