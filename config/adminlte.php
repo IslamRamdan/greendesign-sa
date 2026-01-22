@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>نقل دِينا</b>',  // النص الأساسي للشعار
+    'logo' => '<b>لوحة التحكم</b>',  // النص الأساسي للشعار
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
