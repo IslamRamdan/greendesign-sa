@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة زهرةالريان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('fav.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('fav.svg') }}">
+
+</head>
+
+<body>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#process">خطوات العمل</a></li>
+            <li><a href="{{ route('blog.index') }}">المدونات</a></li>
+            <li><a href="#why-us">لماذا نحن</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-leaf"></i> حدائق و ملاعب زهرة الريان </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#process">خطوات العمل</a></li>
+                <li><a href="{{ route('blog.index') }}">المدونات</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>حوّل حلمك إلى <span class="highlight-text">واقع أخضر</span></h1>
+            <div class="experience-badge" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-certificate"></i> خبرة أكثر من 15 سنة في مجال تنسيق الحدائق والملاعب
+            </div>
+
+            <p>
+                في مؤسسة حدائق و ملاعب زهرة الريان، نبتكر مساحات خضراء تخطف الأنظار، وملاعب بمعايير عالمية، وديكورات
+                تروي قصص الفخامة. دعنا نصمم لك ملاذاً طبيعياً يجمع بين الهدوء والجمال في قلب منزلك.
+            </p>
+            <div class="hero-btns">
+                <a href="tel:0509085728" class="btn btn-secondary">اتصل بنا <i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/966509085728" target="_blank" class="btn btn-primary pulse-btn">راسلنا واتساب <i
+                        class="fab fa-whatsapp"></i> </a>
+
+            </div>
+        </div>
+    </section>
+    <section id="intro-video" class="section-padding"
+        style="background: linear-gradient(180deg, #eaece7 0%, #e0ebd5 100%);">
+        <div class="container">
+            <div class="intro-grid-container">
+
+                <div class="intro-caption" data-aos="fade-left">
+                    <h2 class="square-title">فيديو تعريفي </h2>
+                </div>
+                <div class="square-video-wrapper" data-aos="fade-right">
+                    <video controls>
+                        <source src="videos/WhatsApp Video 2025-12-07 at 15.38.37_13bf9bdd.mp4" type="video/mp4">
+                        متصفحك لا يدعم الفيديو.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-padding section-gradient-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="images/IMG-20251204-WA0014.jpg" alt="فريق العمل" class="float-animation">
+                </div>
+                <div class="col-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="section-title">من نحن</h2>
+                    <p class="lead-text">
+                        يقوم فريق عمل محترف ومتخصص في الزراعة وتنسيق الحدائق وتنفيذ ملاعب كرة القدم واعمال الديكورات
+                        بالرياض بأعلى معايير الجودة والإتقان.
+                    </p>
+                    <p>
+                        نحن أكثر من مجرد شركة تنسيق حدائق؛ نحن رواد في صناعة الجمال الطبيعي. نجمع بين الخبرة الهندسية
+                        الدقيقة والذوق الفني الرفيع لتحويل المساحات الصامتة والجرداء إلى واحات تنبض بالحياة. نستخدم أحدث
+                        تقنيات الري الذكية لضمان الاستدامة، وننتقي أجود أنواع النباتات والأشجار التي تتلاءم مع بيئة
+                        المملكة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services-section section-padding section-gradient-2">
+        <div class="container">
+            <h2 class="section-title center-title" data-aos="fade-up">خدماتنا المتكاملة</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="location.href='service-details.html?id=1'" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="service-img">
+                        <img src="images\WhatsApp Image 2025-12-04 at 19.18.51_1a6922e4.jpg" alt="زراعة النخيل">
+                    </div>
+                    <div class="service-content">
+                        <h3>الزراعة وشبكات الري</h3>
+                        <p>
+                            زراعة الثيل الطبيعي وزراعة النخيل المثمر.
+                            <br>
+                            <span class="details-link">اضغط للتفاصيل <i class="fas fa-arrow-left"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card" onclick="location.href='service-details.html?id=2'" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="service-img">
+                        <img src="images/الشلالات والنوافير.webp" alt="شلالات">
+                    </div>
+                    <div class="service-content">
+                        <h3>الشلالات والنوافير</h3>
+                        <p>
+                            تصميم شلالات ومصبات ستيل عصرية ونوافير كلاسيكية.
+                            <br>
+                            <span class="details-link">اضغط للتفاصيل <i class="fas fa-arrow-left"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card" onclick="location.href='service-details.html?id=3'" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="service-img">
+                        <img src="images\WhatsApp Image 2025-12-04 at 19.21.23_2fc71029.jpg" alt="ملاعب">
+                    </div>
+                    <div class="service-content">
+                        <h3>الملاعب الرياضية</h3>
+                        <p>
+                            تجهيز ملاعب كرة قدم وبادل للمدارس والفلل.
+                            <br>
+                            <span class="details-link">اضغط للتفاصيل <i class="fas fa-arrow-left"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card" onclick="location.href='service-details.html?id=4'" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="service-img">
+                        <img src="images/العشب الصناعي والديكور.webp" alt="عشب صناعي">
+                    </div>
+                    <div class="service-content">
+                        <h3>العشب الصناعي والديكور</h3>
+                        <p>
+                            توريد وتركيب عشب صناعي وجداري وديكورات خشبية.
+                            <br>
+                            <span class="details-link">اضغط للتفاصيل <i class="fas fa-arrow-left"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card" onclick="location.href='service-details.html?id=5'" data-aos="fade-up"
+                    data-aos-delay="500">
+                    <div class="service-img">
+                        <img src="images/الغرف الزجاجية والداخلية.jpg" alt="غرف زجاجية">
+                    </div>
+                    <div class="service-content">
+                        <h3>الغرف الزجاجية</h3>
+                        <p>
+                            تنفيذ غرف زجاجية (Sunrooms) وتنسيق حدائق داخلية.
+                            <br>
+                            <span class="details-link">اضغط للتفاصيل <i class="fas fa-arrow-left"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card" onclick="location.href='service-details.html?id=6'" data-aos="fade-up"
+                    data-aos-delay="600">
+                    <div class="service-img">
+                        <img src="images/الممرات والحجر الطبيعي.webp" alt="ممرات حجرية">
+                    </div>
+                    <div class="service-content">
+                        <h3>الممرات والحجر الطبيعي</h3>
+                        <p>
+                            رصف الممرات بالحجر العشوائي وتصميم جلسات برية.
+                            <br>
+                            <span class="details-link">اضغط للتفاصيل <i class="fas fa-arrow-left"></i></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="process" class="section-padding section-gradient-3">
+        <div class="container">
+            <h2 class="section-title center-title" data-aos="fade-down">رحلة تحويل الحديقة</h2>
+            <div class="process-container">
+                <div class="process-step" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-phone-volume"></i>
+                    <h3>استشارة ومعاينة</h3>
+                    <p>نتلقى اتصالك، نستمع لمتطلباتك، ونزور الموقع لرفع المقاسات بدقة.</p>
+                </div>
+                <div class="process-step" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>تصميم مخصص</h3>
+                    <p>نقدم لك مخططات وتصاميم مقترحة تناسب ذوقك وتستغل كل زاوية.</p>
+                </div>
+                <div class="process-step" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-tools"></i>
+                    <h3>تنفيذ احترافي</h3>
+                    <p>يبدأ فريقنا الفني العمل باستخدام أفضل المعدات والخامات.</p>
+                </div>
+                <div class="process-step" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>تسليم وضمان</h3>
+                    <p>نسلمك المشروع جاهزاً مع تقديم ضمان شامل وخدمة صيانة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="section-padding section-gradient-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-text" data-aos="fade-left">
+                    <h2 class="section-title">لماذا حدائق و ملاعب زهرة الريان</h2>
+                    <p class="lead-text">لأننا نؤمن أن التميز يكمن في التفاصيل.</p>
+                    <div class="features-grid">
+                        <div class="feature-box">
+                            <i class="fas fa-award"></i>
+                            <h4>جودة عالمية</h4>
+                            <p>لا نتنازل عن الجودة في اختيار النباتات، العشب، ومواد البناء.</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-clock"></i>
+                            <h4>التزام بالمواعيد</h4>
+                            <p>نقدر وقتك، لذا ننجز المشاريع بدقة متناهية.</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-palette"></i>
+                            <h4>تصاميم عصرية</h4>
+                            <p>فريق تصميم مبدع يواكب أحدث صيحات الديكور.</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fas fa-headset"></i>
+                            <h4>خدمة ما بعد البيع</h4>
+                            <p>نبقى على تواصل معك لضمان استمرار جمال حديقتك.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-image" data-aos="zoom-in">
+                    <img src="images/alternatives-to-grass-11-no-mow-ideas-for-your-garden-real-homes.jpg"
+                        alt="حديقة منزلية" class="float-animation">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section section-padding section-gradient-4">
+        <div class="container">
+            <h2 class="section-title center-title" data-aos="zoom-in">تواصل معنا الآن</h2>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="contact-card">
+                        <h3>بيانات التواصل</h3>
+                        <p class="contact-desc">فريقنا جاهز لخدمتكم طوال أيام الأسبوع.</p>
+
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-text">
+                                <span>اتصل بنا</span>
+                                <a href="tel:0509085728" class="phone-link">0509085728</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="info-text">
+                                <span>موقعنا</span>
+                                <strong>الرياض، المملكة العربية السعودية</strong>
+                            </div>
+                        </div>
+                        <div class="social-box">
+                            <p>تابع أحدث أعمالنا على:</p>
+                            <div class="social-buttons">
+                                <a href="https://www.instagram.com/landscape1801?utm_source=qr&igsh=MXN6Z3MwenAwcWEweQ=="
+                                    target="_blank" class="social-btn insta">
+                                    <i class="fab fa-instagram"></i> انستجرام
+                                </a>
+                                <a href="https://www.tiktok.com/@user63571166347308?_r=1&_t=ZS-91vAYhCdVKP"
+                                    target="_blank" class="social-btn tiktok">
+                                    <i class="fab fa-tiktok"></i> تيك توك
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <form class="styled-form">
+                        <h3>اطلب خدمة الان </h3>
+                        <div class="form-group">
+                            <label>الاسم</label>
+                            <input type="text" placeholder="الاسم " required>
+                        </div>
+                        <div class="form-group">
+                            <label>رقم الجوال</label>
+                            <input type="text" placeholder="050xxxxxxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label>الخدمة المطلوبة</label>
+                            <select>
+                                <option value="" disabled selected>اختر الخدمة من القائمة</option>
+                                <option value="الزراعة وشبكات الري">الزراعة وشبكات الري</option>
+                                <option value="الشلالات والنوافير">الشلالات والنوافير</option>
+                                <option value="الملاعب الرياضية">الملاعب الرياضية</option>
+                                <option value="العشب الصناعي والديكور">العشب الصناعي والديكور</option>
+                                <option value="الغرف الزجاجية والداخلية">الغرف الزجاجية والداخلية</option>
+                                <option value="الممرات والحجر الطبيعي">الممرات والحجر الطبيعي</option>
+                                <option value="خدمة أخرى">خدمة أخرى / صيانة</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 pulse-btn">إرسال <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h3><i class="fas fa-leaf"></i> حدائق و ملاعب زهرة الريان</h3>
+                    <p>
+                        مؤسسة رائدة في مجال تنسيق الحدائق والملاعب. نسعى لتحويل المساحات إلى واحات خضراء تسر الناظرين،
+                        مع الالتزام بأعلى معايير الجودة والدقة في التنفيذ.
+                    </p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/landscape1801?utm_source=qr&igsh=MXN6Z3MwenAwcWEweQ=="
+                            target="_blank" class="icon-link insta-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@user63571166347308?_r=1&_t=ZS-91vAYhCdVKP" target="_blank"
+                            class="icon-link tiktok-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>روابط تهمك</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#process">كيف نعمل</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>بيانات التواصل</h3>
+
+                    <div class="contact-row">
+                        <div class="text">الرياض، المملكة العربية السعودية</div>
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="text"><a href="tel:0509085728"
+                                style="color:inherit; text-decoration:none;">0509085728</a></div>
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>جميع الحقوق محفوظة &copy; مؤسسة حدائق و ملاعب زهرة الريان</p>
+                <p class="developer">
+                    تصميم و برمجة
+                    <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

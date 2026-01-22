@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>تفاصيل الخدمة | حدائق و ملاعب زهرة الريان</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="mobile-nav" id="mobileNav">
+            <div class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="/">الرئيسية</a></li>
+                <li><a href="/#services">خدمات أخرى</a></li>
+                <li><a href="/blog">المدونات</a></li>
+                <li><a href="/#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="/" style="text-decoration: none"
+                        ><h1>
+                            <i class="fas fa-leaf"></i>حدائق و ملاعب زهرة الريان
+                        </h1></a
+                    >
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">الرئيسية</a></li>
+                    <li><a href="/#services">الخدمات</a></li>
+                    <li><a href="/blog">المدونات</a></li>
+                    <li><a href="/#contact">تواصل معنا</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <div class="details-hero" id="serviceHero">
+            <div style="position: relative; z-index: 2">
+                <h1 id="serviceTitle">جاري التحميل...</h1>
+            </div>
+        </div>
+        <section class="details-content">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="main-info" data-aos="fade-left">
+                        <h2 id="serviceSubtitle">وصف الخدمة</h2>
+                        <p id="serviceDesc">وصف تفصيلي...</p>
+
+                        <h3>
+                            <i class="fas fa-star" style="color: #fbc02d"></i>
+                            مميزات الخدمة:
+                        </h3>
+                        <ul
+                            class="features-list-check"
+                            id="serviceFeatures"
+                        ></ul>
+
+                        <h3>
+                            <i class="fas fa-video" style="color: #2e7d32"></i>
+                            فيديوهات من أعمالنا:
+                        </h3>
+                        <div class="media-grid" id="serviceVideos"></div>
+
+                        <h3>
+                            <i class="fas fa-images" style="color: #fbc02d"></i>
+                            صور من أعمالنا:
+                        </h3>
+                        <div class="media-grid" id="serviceGallery"></div>
+                    </div>
+
+                    <div class="sidebar-area" data-aos="fade-right">
+                        <div class="booking-sidebar">
+                            <h3>احجز هذه الخدمة</h3>
+                            <p
+                                style="
+                                    font-size: 0.9rem;
+                                    color: #666;
+                                    margin-bottom: 15px;
+                                    text-align: center;
+                                "
+                            >
+                                املأ البيانات وسنتواصل معك لتحديد موعد المعاينة.
+                            </p>
+                            <form
+                                class="styled-form"
+                                style="
+                                    padding: 0;
+                                    box-shadow: none;
+                                    border: none;
+                                    border-top: none;
+                                    background: transparent;
+                                "
+                            >
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        placeholder="الاسم"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        placeholder="رقم الجوال"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="bookingServiceName"
+                                        readonly
+                                        style="
+                                            background: #e8f5e9;
+                                            color: #2e7d32;
+                                            font-weight: bold;
+                                            border: 1px solid #c8e6c9;
+                                        "
+                                    />
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary w-100 pulse-btn"
+                                >
+                                    تأكيد الحجز
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer style="text-align: center">
+            <div class="container">
+                <p style="margin: 0">
+                    جميع الحقوق محفوظة &copy; مؤسسة حدائق و ملاعب زهرة الريان
+                </p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+            const servicesDB = {
+                1: {
+                    title: "الزراعة وشبكات الري الحديثة",
+                    image: "images/WhatsApp Image 2025-12-04 at 19.18.51_1a6922e4.jpg",
+                    desc: `تعتبر الزراعة هي الروح الحقيقية لأي حديقة. في حدائق و ملاعب زهرة الريان، لا نقوم فقط بغرس النباتات، بل نقوم بدراسة متكاملة لطبيعة التربة وتوزيع الضوء والظل في حديقتك.
+
+            نبدأ بتركيب شبكات ري أوتوماتيكية متطورة (من ماركات عالمية مثل Hunter و Rain Bird) تضمن وصول المياه لكل نبتة بالكمية المناسبة دون هدر، ويمكن التحكم بها عبر الهاتف.
+            
+            نقوم بزراعة أجود أنواع الثيل الطبيعي (C2000 الأمريكي، والياباني) الذي يتحمل الحرارة، بالإضافة إلى زراعة النخيل المثمر (السكري، البرحي، الإخلاص) والنخيل الواشنطي للزينة، مع ضمان خلوها من الآفات ومعالجة سوسة النخيل بأحدث الطرق العلمية.`,
+                    features: [
+                        "توريد أجود أنواع التربة الزراعية المحسنة.",
+                        "تصميم شبكات ري مخفية وذكية (Smart Irrigation).",
+                        "زراعة أشجار الظل والمصدات والأشجار المتسلقة.",
+                        "تنسيق أحواض الزهور الموسمية والدائمة.",
+                        "عقود صيانة شهرية وسنوية لضمان نضارة الحديقة.",
+                    ],
+                    videos: ["videos/video1.mp4", "videos/video2.mp4"],
+                    gallery: [
+                        "images/WhatsApp Image 2025-12-04 at 20.29.52_73cfc109.jpg",
+                        "images/WhatsApp Image 2025-12-04 at 20.35.39_ff771f7e.jpg",
+                    ],
+                },
+                2: {
+                    title: "تصميم الشلالات والنوافير",
+                    image: "images/الشلالات والنوافير.webp",
+                    desc: `صوت خرير المياه يضفي حياة وسكينة على المكان. نحن متخصصون في تصميم وتنفيذ الشلالات والنوافير التي تعتبر تحفاً فنية في حديقتك.
+            
+            نقدم تصاميم شلالات جدارية مودرن تناسب المساحات الضيقة، وشلالات صخرية تحاكي الطبيعة، بالإضافة إلى المصبات الاستيل (Stainless Steel) المقاومة للصدأ والتي تعطي تدفقاً انسيابياً للمياه.
+            
+            نهتم بأدق التفاصيل الهندسية: العزل المائي بضمان حقيقي لمنع التسريب، استخدام مضخات غاطسة قوية وصامتة، وتوزيع إضاءة LED غاطسة ملونة لتجعل المنظر ليلاً يخطف الأنظار.`,
+                    features: [
+                        "شلالات جدارية وركنية بتصاميم عصرية.",
+                        "نوافير راقصة ونوافير دائرية ومستطيلة.",
+                        "تكسيات حجرية ورخامية وخشبية للشلال.",
+                        "ضمان كامل على العزل والمضخات وأعمال السباكة.",
+                        "إضاءة مخفية (Hidden Light) لإبراز جمال المياه.",
+                    ],
+                    videos: [
+                        "videos/WhatsApp Video 2025-12-04 at 21.02.53_219c140c.mp4",
+                        "videos/WhatsApp Video 2025-12-04 at 19.31.03_feb2e59c.mp4",
+                        "videos/WhatsApp Video 2025-12-05 at 08.22.41_fc818fb2.mp4",
+                    ],
+                    gallery: [
+                        "images/WhatsApp Image 2025-12-05 at 08.13.58_ebebccce.jpg",
+                        "images/img4.jpg",
+                    ],
+                },
+                3: {
+                    title: "تجهيز الملاعب الرياضية",
+                    image: "images/WhatsApp Image 2025-12-04 at 19.21.23_2fc71029.jpg",
+                    desc: `سواء كنت تريد ملعباً خاصاً في فيلتك، أو تجهيز ملاعب للمدارس والاستراحات، نحن نقدم لك حلولاً احترافية.
+            
+            نستخدم العشب الصناعي المخصص للملاعب (بمواصفات الفيفا) الذي يتميز بمرونة عالية وكثافة تتحمل اللعب المستمر والجري، مع طبقات مطاطية (SBR) وسيليكا لضمان سلامة اللاعبين.
+            
+            نقوم بتنفيذ الملاعب من الألف للياء: تسوية الأرض، صبة الخرسانة، تركيب العشب، تخطيط الملعب، تركيب الشبوك الحديدية، وتثبيت أعمدة الإنارة بالكشافات القوية.`,
+                    features: [
+                        "تنفيذ ملاعب كرة قدم (خماسي، سداسي، قانوني).",
+                        "ملاعب بادل وتنس بأرضيات اكريليك أو عشب.",
+                        "عشب صناعي مقاوم للاحتكاك وضمان يصل لـ 7 سنوات.",
+                        "تركيب مرمى وشبك وأعمدة إنارة بجودة عالية.",
+                        "صيانة دورية للملاعب وتجديد الحبيبات المطاطية.",
+                    ],
+                    videos: ["videos/video5.mp4", "videos/video66.mp4"],
+                    gallery: [
+                        "images/img5.jpg",
+                        "images/WhatsApp Image 2025-12-05 at 12.06.41_5619d2aa.jpg",
+                    ],
+                },
+                4: {
+                    title: "العشب الصناعي والديكورات",
+                    image: "images/العشب الصناعي والديكور.webp",
+                    desc: `العشب الصناعي هو الحل المثالي للباحثين عن الجمال الدائم دون عناء الصيانة والري وفواتير المياه.
+            
+            نوفر تشكيلة واسعة من العشب الصناعي (لاندسكيب) بكثافات مختلفة (30ملم، 40ملم، 50ملم) يتميز بملمس ناعم ومظهر طبيعي جداً، ومقاوم لأشعة الشمس الحارقة (UV Resistant) فلا يتغير لونه.
+            
+            نبدع أيضاً في الديكورات الجدارية: دمج العشب الجداري مع بديل الخشب وبديل الرخام، وتصميم جدران 3D بأشكال هندسية، مع إضافة إضاءة وفوانيس لتصبح الجدران لوحات فنية.`,
+                    features: [
+                        "عشب صناعي عالي الكثافة لا يحتاج لري أو قص.",
+                        "عشب جداري (ياسمين، بنفسج، 3D Mix).",
+                        "آمن تماماً للأطفال والحيوانات الأليفة وصديق للبيئة.",
+                        "ديكورات خشبية للممرات والجلسات.",
+                        "سرعة في التركيب ودقة في الفنش النهائي.",
+                    ],
+                    videos: [
+                        "videos/video7.mp4",
+                        "videos/WhatsApp Video 2025-12-04 at 19.49.23_390850fd.mp4",
+                    ],
+                    gallery: [
+                        "images/img7.jpg",
+                        "images/WhatsApp Image 2025-12-04 at 21.18.29_a7c04981.jpg",
+                    ],
+                },
+                5: {
+                    title: "الغرف الزجاجية والحدائق الداخلية",
+                    image: "images/الغرف الزجاجية والداخلية.jpg",
+                    desc: `استمتع بجمال حديقتك في كل فصول السنة مع الغرف الزجاجية (Sunrooms). نحن نصمم وننفذ ملاحق وغرف زجاجية بقطاعات ألومنيوم وحديد معزولة، وزجاج دبل جلاس عازل للحرارة والصوت.
+            
+            كما نهتم بالحدائق الداخلية (Indoor Gardens): نستغل المساحات تحت الدرج وفي الزوايا لعمل أحواض زراعية أنيقة باستخدام نباتات الظل، والبحص الديكوري، والأحجار البيضاء، مع إضاءة موجهة تبرز جمال المكان.`,
+                    features: [
+                        "غرف زجاجية بانورامية بإطلالة كاملة على الحديقة.",
+                        "عزل حراري ومائي 100% للأسقف والجدران.",
+                        "تنسيق حدائق تحت الدرج (Under Stairs Landscape).",
+                        "أعمال الجبس بورد والأسقف المستعارة.",
+                        "جلسات داخلية مكيفة وسط الطبيعة.",
+                    ],
+                    videos: [
+                        "videos/video9.mp4",
+                        "videos/WhatsApp Video 2025-12-04 at 19.51.46_75c01097.mp4",
+                    ],
+                    gallery: ["images/img9.jpg", "images/img10.jpg"],
+                },
+                6: {
+                    title: "الممرات الحجرية والجلسات التراثية",
+                    image: "images/الممرات والحجر الطبيعي.webp",
+                    desc: `الممرات هي الشرايين التي تربط أجزاء حديقتك ببعضها. نحن نتفنن في رصف الممرات باستخدام الحجر الطبيعي العشوائي (الحجر الأصفر، الحجر الكريمي، حجر الرياض) بطرق هندسية جميلة تمنع انزلاق المشاة.
+            
+            كما نقوم بتصميم الجلسات الخارجية المتنوعة: جلسات أرضية تراثية، جلسات مرتفعة (دكة)، ومناطق الشواء (BBQ Area) والمشب، مع تزيينها بالبحص الملون والفواصل الديكورية والإضاءة الأرضية التي ترسم مسار الممر ليلاً.`,
+                    features: [
+                        "توريد وتركيب جميع أنواع الحجر الطبيعي والعشوائي.",
+                        "تصميم مشايات وممرات بالأنترلوك والخرسانة المطبوعة.",
+                        "جلسات خارجية مقاومة للعوامل الجوية.",
+                        "تنسيق مناطق الشواء والمشبات الحجرية.",
+                        "فواصل من البحص الأبيض والرمادي.",
+                    ],
+                    videos: ["videos/video11.mp4", "videos/video12.mp4"],
+                    gallery: [
+                        "images/img11.jpg",
+                        "images/img12.webp",
+                        "images/WhatsApp Image 2025-12-07 at 21.27.36_253f3914.jpg",
+                    ],
+                },
+            };
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceId = urlParams.get("id");
+
+            if (serviceId && servicesDB[serviceId]) {
+                const data = servicesDB[serviceId];
+
+                document.getElementById("serviceTitle").innerText = data.title;
+                document.getElementById("serviceSubtitle").innerText =
+                    "عن " + data.title;
+                document.getElementById("serviceDesc").innerText = data.desc;
+                document.getElementById("serviceHero").style.backgroundImage =
+                    `url('${data.image}')`;
+                document.getElementById("bookingServiceName").value =
+                    "طلب: " + data.title;
+
+                data.features.forEach((f) => {
+                    document.getElementById("serviceFeatures").innerHTML +=
+                        `<li><i class="fas fa-check-circle"></i> ${f}</li>`;
+                });
+
+                const videosContainer =
+                    document.getElementById("serviceVideos");
+                data.videos.forEach((vidUrl) => {
+                    videosContainer.innerHTML += `
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="${vidUrl}" type="video/mp4">
+                        المتصفح لا يدعم الفيديو.
+                    </video>
+                </div>
+            `;
+                });
+
+                const galleryContainer =
+                    document.getElementById("serviceGallery");
+                data.gallery.forEach((imgSrc) => {
+                    galleryContainer.innerHTML += `<img src="${imgSrc}" alt="${data.title}">`;
+                });
+            }
+
+            const hamburger = document.getElementById("hamburger");
+            const mobileNav = document.getElementById("mobileNav");
+            const closeBtn = document.getElementById("closeBtn");
+            function toggleMenu() {
+                mobileNav.classList.toggle("active");
+            }
+            if (hamburger) hamburger.addEventListener("click", toggleMenu);
+            if (closeBtn) closeBtn.addEventListener("click", toggleMenu);
+        </script>
+    </body>
+</html>
